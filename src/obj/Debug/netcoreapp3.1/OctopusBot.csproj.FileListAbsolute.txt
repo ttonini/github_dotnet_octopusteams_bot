@@ -1,0 +1,7 @@
+/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/obj/Debug/netcoreapp3.1/OctopusBot.csproj.AssemblyReference.cache
+/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/obj/Debug/netcoreapp3.1/OctopusBot.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/obj/Debug/netcoreapp3.1/OctopusBot.AssemblyInfoInputs.cache
+/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/obj/Debug/netcoreapp3.1/OctopusBot.AssemblyInfo.cs
+/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/obj/Debug/netcoreapp3.1/OctopusBot.csproj.CoreCompileInputs.cache
+/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/obj/Debug/netcoreapp3.1/OctopusBot.MvcApplicationPartsAssemblyInfo.cs
+/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/obj/Debug/netcoreapp3.1/OctopusBot.MvcApplicationPartsAssemblyInfo.cache

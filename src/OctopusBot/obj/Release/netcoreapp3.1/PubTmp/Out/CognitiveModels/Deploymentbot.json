@@ -1,0 +1,2250 @@
+﻿{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "Check Deployment",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "Octopus_Deployment_Entity",
+      "children": [
+        {
+          "name": "Build",
+          "children": [],
+          "features": []
+        },
+        {
+          "name": "Environment",
+          "children": [],
+          "features": [
+            {
+              "modelName": "EnvironmentEntity",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "name": "Service",
+          "children": [],
+          "features": [
+            {
+              "modelName": "ServiceEntity",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "name": "TeamName",
+          "children": [],
+          "features": [
+            {
+              "modelName": "TeamNameEntity",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "name": "Language",
+          "children": [],
+          "features": [
+            {
+              "modelName": "LanguageEntity",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "roles": [],
+      "features": []
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "EnvironmentEntity",
+      "subLists": [
+        {
+          "canonicalForm": "Clinical_Trial",
+          "list": [
+            "clinical",
+            "trial",
+            "clinical trial",
+            "clinical_trial"
+          ]
+        },
+        {
+          "canonicalForm": "Production_Blue",
+          "list": [
+            "prod",
+            "production",
+            "production blue",
+            "prod blue",
+            "production_blue"
+          ]
+        },
+        {
+          "canonicalForm": "SIT",
+          "list": [
+            "sit"
+          ]
+        },
+        {
+          "canonicalForm": "Dev",
+          "list": [
+            "dev",
+            "develop",
+            "development"
+          ]
+        },
+        {
+          "canonicalForm": "Test_Green",
+          "list": [
+            "green",
+            "test green",
+            "test_green"
+          ]
+        },
+        {
+          "canonicalForm": "Test_Blue",
+          "list": [
+            "blue",
+            "test blue",
+            "test_blue"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "LanguageEntity",
+      "subLists": [
+        {
+          "canonicalForm": "dotnet",
+          "list": [
+            ".net",
+            "net",
+            "dot net",
+            "c#"
+          ]
+        },
+        {
+          "canonicalForm": "node",
+          "list": [
+            "js",
+            "javascript"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "ServiceEntity",
+      "subLists": [
+        {
+          "canonicalForm": "accepttcpp-service",
+          "list": [
+            "accept tcpp service",
+            "accept tcpp",
+            "accept",
+            "acceptcpp",
+            "accepttcpp_service"
+          ]
+        },
+        {
+          "canonicalForm": "account-service",
+          "list": [
+            "account",
+            "account service",
+            "account_service"
+          ]
+        },
+        {
+          "canonicalForm": "checkemail-service",
+          "list": [
+            "check email service",
+            "check email",
+            "checkemail_service"
+          ]
+        },
+        {
+          "canonicalForm": "checkpassword-service",
+          "list": [
+            "check password service",
+            "check password",
+            "password",
+            "password service",
+            "checkpassword_service"
+          ]
+        },
+        {
+          "canonicalForm": "decode-service",
+          "list": [
+            "decode service",
+            "decode",
+            "decode_service"
+          ]
+        },
+        {
+          "canonicalForm": "email-service",
+          "list": [
+            "email service",
+            "email",
+            "email_service"
+          ]
+        },
+        {
+          "canonicalForm": "oauth2-service",
+          "list": [
+            "oauth2 service",
+            "oauth2",
+            "oauth service",
+            "oauth",
+            "oauth2_service"
+          ]
+        },
+        {
+          "canonicalForm": "queuechecker-service",
+          "list": [
+            "queue checker service",
+            "queue checker",
+            "queue service",
+            "queuechecker_service"
+          ]
+        },
+        {
+          "canonicalForm": "upload-service",
+          "list": [
+            "upload service",
+            "upload",
+            "uploader",
+            "uploader service",
+            "upload_service"
+          ]
+        },
+        {
+          "canonicalForm": "validvalues-service",
+          "list": [
+            "valid values service",
+            "valid values",
+            "values service",
+            "validvalues",
+            "validvalues service",
+            "validvalues_service"
+          ]
+        },
+        {
+          "canonicalForm": "all-services",
+          "list": [
+            "all",
+            "all services",
+            "all_services"
+          ]
+        },
+        {
+          "canonicalForm": "controliq-service",
+          "list": [
+            "controliq service",
+            "control iq",
+            "control",
+            "control service",
+            "control iq service",
+            "controliq",
+            "controliq_service"
+          ]
+        },
+        {
+          "canonicalForm": "crmmatch-service",
+          "list": [
+            "crmmatch service",
+            "crm match service",
+            "crm match",
+            "crm service",
+            "crmmatch_service"
+          ]
+        },
+        {
+          "canonicalForm": "devicetelemetry-service",
+          "list": [
+            "device telemetry service",
+            "device telemetry",
+            "device service",
+            "telemetry service",
+            "telemetry",
+            "device",
+            "devicetelemetry",
+            "devicetelemetry_service"
+          ]
+        },
+        {
+          "canonicalForm": "healthcheck-web",
+          "list": [
+            "health check service",
+            "health check web",
+            "healthcheck",
+            "health check",
+            "health service",
+            "healthcheck_web"
+          ]
+        },
+        {
+          "canonicalForm": "ingestion-admin-service",
+          "list": [
+            "ingestion admin service",
+            "ingestionadminservice",
+            "ingestion admin",
+            "ingestion_admin_service"
+          ]
+        },
+        {
+          "canonicalForm": "ingestion-basal-service",
+          "list": [
+            "ingestion basal service",
+            "ingestionbasal",
+            "ingestion basal",
+            "basal service",
+            "basal",
+            "ingestion_basal_service"
+          ]
+        },
+        {
+          "canonicalForm": "ingestion-pumpdatatransformation-service",
+          "list": [
+            "ingestion pump data transformation service",
+            "pump data transformation service",
+            "transformation service",
+            "transformation",
+            "pump data",
+            "pump data service",
+            "pump data transformation",
+            "ingestion_pumpdatatransformation_service"
+          ]
+        },
+        {
+          "canonicalForm": "ingestion-pumpmetadata-service",
+          "list": [
+            "ingestion pump metadata service",
+            "ingestion metadata service",
+            "ingestion pump metadata",
+            "ingestion metadata",
+            "metadata service",
+            "pump metadata",
+            "ingestion_pumpmetadata_service"
+          ]
+        },
+        {
+          "canonicalForm": "ingestion-useractivity-service",
+          "list": [
+            "ingestion user activity service",
+            "user activity service",
+            "user activity",
+            "ingestion user activity",
+            "ingestion useractivity",
+            "ingestion_useractivity_service"
+          ]
+        },
+        {
+          "canonicalForm": "monitor-service",
+          "list": [
+            "monitor service",
+            "monitor",
+            "monitorservice",
+            "monitor_service"
+          ]
+        },
+        {
+          "canonicalForm": "notification-service",
+          "list": [
+            "notification service",
+            "notification",
+            "notificationservice",
+            "notification_service"
+          ]
+        },
+        {
+          "canonicalForm": "pumpdataupload-service",
+          "list": [
+            "pump data upload service",
+            "pump data upload",
+            "data upload service",
+            "pumpdataupload_service"
+          ]
+        },
+        {
+          "canonicalForm": "pumplogs-service",
+          "list": [
+            "pump logs service",
+            "pump logs",
+            "pump log",
+            "log service",
+            "pump log service",
+            "pumplogs_service"
+          ]
+        },
+        {
+          "canonicalForm": "reportengine-service",
+          "list": [
+            "report engine service",
+            "reportengine service",
+            "report engine",
+            "reportengine_service"
+          ]
+        },
+        {
+          "canonicalForm": "therapy-events-service",
+          "list": [
+            "therapy events service",
+            "therapy service",
+            "therapy events",
+            "therapy_events_service"
+          ]
+        },
+        {
+          "canonicalForm": "uploadretrieval-service",
+          "list": [
+            "upload retrieval service",
+            "upload retrieval",
+            "retrieval service",
+            "retrieval",
+            "uploadretrieval_service"
+          ]
+        },
+        {
+          "canonicalForm": "usersettings-service",
+          "list": [
+            "user settings service",
+            "user settings",
+            "settings service",
+            "usersettings_service"
+          ]
+        },
+        {
+          "canonicalForm": "messaging-service",
+          "list": [
+            "messaging service",
+            "messaging",
+            "messaging_service"
+          ]
+        },
+        {
+          "canonicalForm": "k8s-configmaps",
+          "list": [
+            "k8s config maps",
+            "configmaps",
+            "config maps",
+            "k8s",
+            "k8s_configmaps",
+            "k8s config",
+            "k8s_config"
+          ]
+        },
+        {
+          "canonicalForm": "seq",
+          "list": [
+            "SEQ"
+          ]
+        },
+        {
+          "canonicalForm": "admin",
+          "list": [
+            "admin service",
+            "admin_service",
+            "tconn admin"
+          ]
+        },
+        {
+          "canonicalForm": "webapp",
+          "list": [
+            "web app",
+            "web-app",
+            "web_app",
+            "web apps"
+          ]
+        },
+        {
+          "canonicalForm": "webservice-rest",
+          "list": [
+            "web service rest",
+            "webservice rest",
+            "webservice_rest",
+            "web services rest",
+            "webservices rest",
+            "rest"
+          ]
+        },
+        {
+          "canonicalForm": "webservice-soap",
+          "list": [
+            "web service soap",
+            "webservice soap",
+            "webservice_soap",
+            "web services soap",
+            "webservices soap",
+            "soap",
+            "tconn soap"
+          ]
+        },
+        {
+          "canonicalForm": "hcp-web",
+          "list": [
+            "hcp",
+            "hcp web",
+            "hcp_web"
+          ]
+        },
+        {
+          "canonicalForm": "reportengine-spa",
+          "list": [
+            "report engine spa",
+            "reportengine spa",
+            "reportengine_spa"
+          ]
+        },
+        {
+          "canonicalForm": "therapy-stats-service",
+          "list": [
+            "therapy stats",
+            "therapy stats service",
+            "therapy_stats_service",
+            "stats service"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "TeamNameEntity",
+      "subLists": [
+        {
+          "canonicalForm": "arcus",
+          "list": [
+            "arc"
+          ]
+        },
+        {
+          "canonicalForm": "cloud",
+          "list": []
+        },
+        {
+          "canonicalForm": "tconnect",
+          "list": [
+            "tcon",
+            "tconn",
+            "connect"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "are the waves firing today",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book me a flight",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "bring up check email on dev for dotnet please",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 9,
+          "endPos": 19,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 9,
+              "endPos": 19,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 24,
+          "endPos": 26,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 24,
+              "endPos": 26,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 32,
+          "endPos": 37,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 32,
+              "endPos": 37,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "can i have a medium pizza",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can i see the dotnet version of user settings for team cloud on development",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 14,
+          "endPos": 19,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 14,
+              "endPos": 19,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 32,
+          "endPos": 44,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 32,
+              "endPos": 44,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 55,
+          "endPos": 59,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 55,
+              "endPos": 59,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 64,
+          "endPos": 74,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 64,
+              "endPos": 74,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "can i see what is going on with ingestion pump data transformation for the cloud team on production in dotnet",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 32,
+          "endPos": 65,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 32,
+              "endPos": 65,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 75,
+          "endPos": 79,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 75,
+              "endPos": 79,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 89,
+          "endPos": 98,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 89,
+              "endPos": 98,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 103,
+          "endPos": 108,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 103,
+              "endPos": 108,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "can i see what seq is up to on the dev server",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 15,
+          "endPos": 17,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 15,
+              "endPos": 17,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 35,
+          "endPos": 37,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 35,
+              "endPos": 37,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "can i see what the arcus decode service is doing on test blue",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 19,
+          "endPos": 23,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 19,
+              "endPos": 23,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 25,
+          "endPos": 38,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 25,
+              "endPos": 38,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 52,
+          "endPos": 60,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 52,
+              "endPos": 60,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "check tconnect hcp web",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 6,
+          "endPos": 13,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 6,
+              "endPos": 13,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 15,
+          "endPos": 21,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 15,
+              "endPos": 21,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "cloud health check in dotnet on test blue please",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 0,
+          "endPos": 4,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 0,
+              "endPos": 4,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 6,
+          "endPos": 17,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 6,
+              "endPos": 17,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 22,
+          "endPos": 27,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 22,
+              "endPos": 27,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 32,
+          "endPos": 40,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 32,
+              "endPos": 40,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "did the lakers win?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "display upload service in test blue",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 8,
+          "endPos": 21,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 8,
+              "endPos": 21,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 26,
+          "endPos": 34,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 26,
+              "endPos": 34,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "get controliq service",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 4,
+          "endPos": 20,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 4,
+              "endPos": 20,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "get jeff his cerveza",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "get me the cloud validvalues service",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 11,
+          "endPos": 15,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 11,
+              "endPos": 15,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 17,
+          "endPos": 35,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 17,
+              "endPos": 35,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "get the status of valid values service on test blue",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 18,
+          "endPos": 37,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 18,
+              "endPos": 37,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 42,
+          "endPos": 50,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 42,
+              "endPos": 50,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "give me a cookie",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "go beavs",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how is the cloud project on health check doing on clinical written in dotnet",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 11,
+          "endPos": 15,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 11,
+              "endPos": 15,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 28,
+          "endPos": 39,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 28,
+              "endPos": 39,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 50,
+          "endPos": 57,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 50,
+              "endPos": 57,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 70,
+          "endPos": 75,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 70,
+              "endPos": 75,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "i like that blue car",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i wanna see the cloud build on upload service in test green",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 16,
+          "endPos": 20,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 16,
+              "endPos": 20,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 31,
+          "endPos": 44,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 31,
+              "endPos": 44,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 49,
+          "endPos": 58,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 49,
+              "endPos": 58,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "i would like to see upload service in test green",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 20,
+          "endPos": 33,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 20,
+              "endPos": 33,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 38,
+          "endPos": 47,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 38,
+              "endPos": 47,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "i'll take a chicken burrito",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "is the arcus valid values service up on clinical?",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 7,
+          "endPos": 11,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 7,
+              "endPos": 11,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 13,
+          "endPos": 32,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 13,
+              "endPos": 32,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 40,
+          "endPos": 47,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 40,
+              "endPos": 47,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "is the js version of check password up and running on dev for arcus",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 7,
+          "endPos": 8,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 7,
+              "endPos": 8,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 21,
+          "endPos": 34,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 21,
+              "endPos": 34,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 54,
+          "endPos": 56,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 54,
+              "endPos": 56,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 62,
+          "endPos": 66,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 62,
+              "endPos": 66,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "is the node account service running on development",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 7,
+          "endPos": 10,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 7,
+              "endPos": 10,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 12,
+          "endPos": 26,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 12,
+              "endPos": 26,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 39,
+          "endPos": 49,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 39,
+              "endPos": 49,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "is the node queue checker up and running on dev for the arcus team",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 7,
+          "endPos": 10,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 7,
+              "endPos": 10,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 12,
+          "endPos": 24,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 12,
+              "endPos": 24,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 44,
+          "endPos": 46,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 44,
+              "endPos": 46,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 56,
+          "endPos": 60,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 56,
+              "endPos": 60,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "is the tconn web app service doing on clinical",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 7,
+          "endPos": 11,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 7,
+              "endPos": 11,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 13,
+          "endPos": 19,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 13,
+              "endPos": 19,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 38,
+          "endPos": 45,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 38,
+              "endPos": 45,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "node check password for cloud on clinical",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 0,
+          "endPos": 3,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 0,
+              "endPos": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 5,
+          "endPos": 18,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 5,
+              "endPos": 18,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 24,
+          "endPos": 28,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 24,
+              "endPos": 28,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 33,
+          "endPos": 40,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 33,
+              "endPos": 40,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "now what is going on with arcus version of queue checker written in js on green",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 26,
+          "endPos": 30,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 26,
+              "endPos": 30,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 43,
+          "endPos": 55,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 43,
+              "endPos": 55,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 68,
+          "endPos": 69,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 68,
+              "endPos": 69,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 74,
+          "endPos": 78,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 74,
+              "endPos": 78,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "order a pizza",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "patrick boyd is our all seeing overlord",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "pull up seq",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 8,
+          "endPos": 10,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 8,
+              "endPos": 10,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "pull up the latest arcus information for crm match on dev",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 19,
+          "endPos": 23,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 19,
+              "endPos": 23,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 41,
+          "endPos": 49,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 41,
+              "endPos": 49,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 54,
+          "endPos": 56,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 54,
+              "endPos": 56,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "should i get thai food for dinner",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show controliq on test green",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 5,
+          "endPos": 16,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 5,
+              "endPos": 13,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 18,
+          "endPos": 27,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 18,
+              "endPos": 27,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "show me arcus telemetry on test blue",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 8,
+          "endPos": 12,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 8,
+              "endPos": 12,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 14,
+          "endPos": 22,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 14,
+              "endPos": 22,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 27,
+          "endPos": 35,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 27,
+              "endPos": 35,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "show me deployment info for decode service on production",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 28,
+          "endPos": 41,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 28,
+              "endPos": 41,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 46,
+          "endPos": 55,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 46,
+              "endPos": 55,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "show me k8s",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 8,
+          "endPos": 10,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 8,
+              "endPos": 10,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "show me k8s config maps",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 8,
+          "endPos": 22,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 8,
+              "endPos": 22,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "show me status of tconnect admin",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 18,
+          "endPos": 25,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 18,
+              "endPos": 25,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 27,
+          "endPos": 31,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 27,
+              "endPos": 31,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "show me the build for upload service in test green on dotnet",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 22,
+          "endPos": 35,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 22,
+              "endPos": 35,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 40,
+          "endPos": 49,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 40,
+              "endPos": 49,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 54,
+          "endPos": 59,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 54,
+              "endPos": 59,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "show me the k8s service",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 12,
+          "endPos": 14,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 12,
+              "endPos": 14,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "show me the tconn build for admin service in test green",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 12,
+          "endPos": 16,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 12,
+              "endPos": 16,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 28,
+          "endPos": 40,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 28,
+              "endPos": 40,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 45,
+          "endPos": 54,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 45,
+              "endPos": 54,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "show tconnect web service rest",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 5,
+          "endPos": 12,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 5,
+              "endPos": 12,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 14,
+          "endPos": 29,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 14,
+              "endPos": 29,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "tconnect admin on clinical",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 0,
+          "endPos": 7,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 0,
+              "endPos": 7,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 9,
+          "endPos": 13,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 9,
+              "endPos": 13,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 18,
+          "endPos": 25,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 18,
+              "endPos": 25,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "this is some random input",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what came first the chicken or the egg",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what color is the sky",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what happened to the titanic",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is the status of the node oauth on clinical",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 26,
+          "endPos": 29,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 26,
+              "endPos": 29,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 31,
+          "endPos": 35,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 31,
+              "endPos": 35,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 40,
+          "endPos": 47,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 40,
+              "endPos": 47,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "what's happening with the tconnect web app",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 26,
+          "endPos": 33,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 26,
+              "endPos": 33,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 35,
+          "endPos": 41,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 35,
+              "endPos": 41,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "what's the status of ingestion admin for the cloud team on clinical trial",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 21,
+          "endPos": 35,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 21,
+              "endPos": 35,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 45,
+          "endPos": 49,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 45,
+              "endPos": 49,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 59,
+          "endPos": 72,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 59,
+              "endPos": 72,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "what's the weather",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what's up with therapy events written in dotnet for the cloud team on blue",
+      "intent": "Check Deployment",
+      "entities": [
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 15,
+          "endPos": 28,
+          "children": [
+            {
+              "entity": "Service",
+              "startPos": 15,
+              "endPos": 28,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 41,
+          "endPos": 46,
+          "children": [
+            {
+              "entity": "Language",
+              "startPos": 41,
+              "endPos": 46,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 56,
+          "endPos": 60,
+          "children": [
+            {
+              "entity": "TeamName",
+              "startPos": 56,
+              "endPos": 60,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "Octopus_Deployment_Entity",
+          "startPos": 70,
+          "endPos": 73,
+          "children": [
+            {
+              "entity": "Environment",
+              "startPos": 70,
+              "endPos": 73,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "why are toyotas so good",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "why did the chicken cross the road",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "versionId": "0.5",
+  "name": "Deployment Chatbot",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [
+    {
+      "name": "Version",
+      "mode": true,
+      "words": "1.0.0-develop,1.4.5-hotfix.,2.5.0-1e0d644c.",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "ServiceTypesPhraseList",
+      "mode": true,
+      "words": "check email,check password,oauth2,oauth,accept tcpp,checkpassword,checkemail,accepttcpp,decode,email,upload,validvalues,all services,controliq,control iq,crmmatch,crm match,device telemetry,devicetelemetry,health check,healthcheck,health check web,healthcheck web,ingestion admin,ingestion basal,ingestion pump metadata,ingestion pumpmetadata,ingestion user activity,monitor,notification,pump logs,pumplogs,report engine,therapy events,therapyevents,upload retrieval,uploadretrieval,user settings,usersettings,messaging,report engine spa,account,k8s config maps,pump data upload,queue checker,admin,webapp,web app,web service rest,web service soap,hcp web,seq,valid values",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "TeamNamePhraseList",
+      "mode": false,
+      "words": "arcus,cloud,tconnect",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "EnvironmentNamePhraseList",
+      "mode": false,
+      "words": "test_blue,test_green,dev,SIT,clinical_trial,production_tconnect,production_blue",
+      "activated": true,
+      "enabledForAllModels": false
+    },
+    {
+      "name": "LanguagePhraseList",
+      "mode": true,
+      "words": "Node,Dotnet",
+      "activated": true,
+      "enabledForAllModels": false
+    }
+  ],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}

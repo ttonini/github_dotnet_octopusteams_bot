@@ -1,0 +1,36 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "url": "https://yt3.ggpht.com/ytc/AKedOLTiUoLqdFMuBi1zs9lxlz_3U3_tcoW66WHVgMiB=s900-c-k-c0x00ffffff-no-rj",
+      "size": "stretch"
+    },
+    {
+      "type": "TextBlock",
+      "spacing": "medium",
+      "size": "default",
+      "weight": "bolder",
+      "text": "Welcome to the Octopus Deployment Bot!",
+      "wrap": true,
+      "maxLines": 0
+    },
+    {
+      "type": "TextBlock",
+      "size": "default",
+      "isSubtle": true,
+      "text": "Chat with me to checkout the status of any deployment you'd like!",
+      "wrap": true,
+      "maxLines": 0
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Check out Octopus Deploy",
+      "url": "https://octopusdeploy.tandemdiabetes.com/app#/users/sign-in"
+    }
+  ]
+}

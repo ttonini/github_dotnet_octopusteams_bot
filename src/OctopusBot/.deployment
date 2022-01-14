@@ -1,0 +1,2 @@
+[config]
+SCM_SCRIPT_GENERATOR_ARGS=--aspNetCore "/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/OctopusBot/OctopusBot.csproj"

@@ -1,0 +1,44 @@
+﻿{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "e5693899-9b47-4a2a-8820-c2a34cd3dc98",
+  "packageName": "com.microsoft.teams.samples",
+  "developer": {
+    "name": "Tandem Diabetes Care",
+    "websiteUrl": "https://www.tandemdiabetes.com/",
+    "privacyUrl": "https://www.tandemdiabetes.com/privacy/privacy-policy",
+    "termsOfUseUrl": "https://www.tandemdiabetes.com/terms-of-use"
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-color.png"
+  },
+  "name": {
+    "short": "Octopus Bot",
+    "full": "Octopus Deployment AI Chat Bot"
+  },
+  "description": {
+    "short": "Check the status of Octopus Deployments",
+    "full": "Chatbot to check the status of any deployments that are currently in Octopus Deploy"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "e5693899-9b47-4a2a-8820-c2a34cd3dc98",
+      "scopes": [
+        "personal"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "token.botframework.com",
+    "*.ngrok.io"
+  ]
+}

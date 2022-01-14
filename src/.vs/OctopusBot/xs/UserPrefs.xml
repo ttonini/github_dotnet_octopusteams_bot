@@ -1,0 +1,40 @@
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{A83C51D5-1075-4231-B577-F7487230C8DF}|CoreBot">
+  <MonoDevelop.Ide.ItemProperties.OctopusBot PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OctopusBot/OctopusBot.csproj">
+    <Files>
+      <File FileName="OctopusBot/TeamsAppManifest/manifest.json" Line="44" Column="2" />
+      <File FileName="OctopusBot/Bots/AuthAndWelcomeBot.cs" />
+      <File FileName="OctopusBot/AppSettings.cs" />
+      <File FileName="OctopusBot/appsettings.json" />
+      <File FileName="OctopusBot/Controllers/BotController.cs" />
+      <File FileName="OctopusBot/Data/ConstantStringData.cs" />
+      <File FileName="OctopusBot/Data/EnvironmentNameSynonymData.cs" />
+      <File FileName="OctopusBot/Startup.cs" />
+      <File FileName="OctopusBot/OctopusBot.csproj" Line="7" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OctopusBot" expanded="True">
+            <Node name="OctopusBot" expanded="True" selected="True">
+              <Node name="Data" expanded="True" />
+              <Node name="TeamsAppManifest" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/OctopusBot/SimpleGraphClient.cs" relfile="OctopusBot/SimpleGraphClient.cs" line="35" column="1" />
+      <Breakpoint file="/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/OctopusBot/Dialogs/LogoutDialog.cs" relfile="OctopusBot/Dialogs/LogoutDialog.cs" line="62" column="1" />
+      <Breakpoint file="/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/OctopusBot/Dialogs/LogoutDialog.cs" relfile="OctopusBot/Dialogs/LogoutDialog.cs" line="56" column="1" />
+      <Breakpoint file="/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/OctopusBot/Dialogs/LogoutDialog.cs" relfile="OctopusBot/Dialogs/LogoutDialog.cs" line="58" column="1" />
+      <Breakpoint file="/Users/ttonini/Desktop/Projects/dotnet_octopusteams_bot/src/OctopusBot/Dialogs/LogoutDialog.cs" relfile="OctopusBot/Dialogs/LogoutDialog.cs" line="60" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
