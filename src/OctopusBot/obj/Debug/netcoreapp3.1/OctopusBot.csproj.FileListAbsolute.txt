@@ -218,4 +218,3 @@
 /Users/ttonini/Desktop/Projects/github_dotnet_octopusteams_bot/src/OctopusBot/obj/Debug/netcoreapp3.1/OctopusBot.dll
 /Users/ttonini/Desktop/Projects/github_dotnet_octopusteams_bot/src/OctopusBot/obj/Debug/netcoreapp3.1/OctopusBot.pdb
 /Users/ttonini/Desktop/Projects/github_dotnet_octopusteams_bot/src/OctopusBot/obj/Debug/netcoreapp3.1/OctopusBot.genruntimeconfig.cache
-/Users/ttonini/Desktop/Projects/github_dotnet_octopusteams_bot/src/OctopusBot/bin/Debug/netcoreapp3.1/packages.config
