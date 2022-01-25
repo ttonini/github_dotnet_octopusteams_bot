@@ -14,7 +14,7 @@
         "outputPath": "/Users/ttonini/Desktop/Projects/github_dotnet_octopusteams_bot/src/OctopusBot/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ttonini/.nuget/NuGet/NuGet.Config"
+          "/Users/ttonini/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
